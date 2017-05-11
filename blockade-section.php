@@ -45,7 +45,7 @@ if( !class_exists('BlockadeSectionBlock') ) { // replace BlockadeSectionBlock wi
 			// this add-on is meant to live in the theme, so it uses theme directory functions
 			// for release plugins, we highly recommend minifying the plugin file, but to simplify dev,
 			// this example is left unminified
-			$plugins['section_block'] = get_template_directory_uri() . '/blockade/section/plugin.js';
+			$plugins['section_block'] = get_stylesheet_directory_uri() . '/blockade/section/plugin.js';
 			return $plugins;
 		}
 	}
